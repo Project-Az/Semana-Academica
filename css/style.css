@@ -67,7 +67,45 @@ nav li {
 nav a {
 		color: #ffffff;
 		text-decoration: none;
-
+		font-size: 1.3em;
 
 }
 
+footer {
+   		position: fixed;
+   		left: 0;
+   		bottom: 0;
+   		padding: 1%;
+  		width: 100%;
+   		background-color: #153641;
+   		color: white;
+   		text-align: center;
+}
+
+.container-texto {
+		width: 65%;
+		margin: 0 auto;
+
+	}
+	.flex-sobre {
+		display: flex;
+		height: 70vh;
+		align-items: center;
+	}
+	.sobre-img {
+		width: 43%;
+		height: 80%;
+		border-radius: 50%;
+	
+	}
+	.sobre-texto {
+		color: #153641;
+		width: 100%;
+		text-align: center;
+		top: 5px;
+
+	}
+	.sobre-p {
+		color: #153641;
+		padding: 0 2em
+	}
