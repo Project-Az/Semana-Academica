@@ -2,8 +2,11 @@
 <html>
 <head>
  
-    <title>Inscrições</title>
+    <title>Jornada Acadêmica - UNIEURO</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
  
 </head>
  
@@ -11,46 +14,58 @@
  
     <!-- Cabeçalho -->
     <header>
- 
-        <nav>
-        	<ul>
-				<li><a href="#"><b>SOBRE</b></a></li>
-				<li><a href="#"><b>INFORMAÇÕES</b></a></li>
-			 	<li><a href="#"><b>INSCRIÇÕES</b></a></li>
-				<li><a href="#"><b>DÚVIDAS</b></a></li>
-			</ul>	
-        </nav>
+        <div class="container">
+            
+            <img src="img/logo.png" alt="logo" class="logo">
+
+            <nav>
+                
+            <ul>
+                <li><a href="#"><b>SOBRE</b></a></li>
+                <li><a href="#"><b>INFORMAÇÕES</b></a></li>
+                <li><a href="#"><b>INSCRIÇÕES</b></a></li>
+                <li><a href="#"><b>DÚVIDAS</b></a></li>
+            </ul>
+            
+            </nav>
+        </div>
  
     </header>
  
     <!-- Conteúdo -->
-    <div>
+    <div class="inscricoes-text">
 
     	<h1>INSCRIÇÕES</h1>
 
     </div>
 
     <div>
-        <section>
+        <section class="formulario">
                 
                 <form action="#" method="post">
 
-                        <label>Nome Completo:</label>
-                        <input type="text"><br>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" name="nome" id="nome" size="50" maxlength="100"><br>
 
-                        <label>E-mail:</label>
-                        <input type="text"><br>
+                        <label for="email">E-mail:</label>
+                        <input type="email"name="email id=email" size="50"><br>
 
-                        <label>Semestre:</label>
-                        <input type="text"><br>
+                        <label for="semestre">Semestre:</label>
+                        <input type="number" name="semestre" id="semestre" size="50" min="1" max="8" value="1"><br>
 
-                        <label>Unidade:</label>
-                        <input type="text"><br>
+                        <label for="unidade">Unidade:</label>
+                        <input type="text" list="unidade0" name="unidade" id="unidade" size="50" maxlength="14"><br>
+                        <datalist id="unidade0">
+                            <option value="1-Águas Claras">1-Águas Claras</option>
+                            <option value="2-Asa Norte">2 Asa Norte</option>
+                            <option value="1-Ása Sul">3-Asa Sul</option>
+                            
+                        </datalist>
 
-                        <label>WorkShop:</label>
-                        <input type="text"><br>
+                        <label for="workshop">WorkShop:</label>
+                        <input type="number" name="workshop" id="workshop" size="50"><br>
 
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" id="enviar" name="enviar">
 
                 </form>            
             
